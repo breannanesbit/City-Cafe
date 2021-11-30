@@ -1,0 +1,51 @@
+@media screen and (max-width: 70em) {
+    main{
+        margin: 5em, 30em;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+ 
+body {
+    background-color: tan;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ 
+}
+header {
+    background-color: rgb(145, 97, 70);
+    text-decoration-color: white;
+    color: white;
+    
+}
+section {
+    margin: 70px;
+    border: solid white;
+    padding: 30px;
+}
+ 
+option {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    columns: 3;
+    row-gap: 1;
+}
+.bar {
+    padding: 20px;
+    margin: 10px;
+    border: solid white;
+}
+.row {
+    border: dotted 2px lightgray;
+    display: flex;
+    text-align: center;
+   
+}
+.column {
+    flex: 30%;
+    padding-left: 5px;
+    padding-right: 5px;
+  
+}
