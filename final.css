@@ -1,22 +1,30 @@
-@media screen and (max-width: 70em) {
+@media screen and (max-width: 40em) {
     main{
-        margin: 5em, 30em;
+        margin: 0em, 30em;
         display: flex;
         flex-wrap: wrap;
     }
 }
+img {
+    padding: 2em;
+}
  
 body {
-    background-color: tan;
+    background-color:tan;
+    border: white dotted;
     text-align: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
  
 }
 header {
-    background-color: rgb(145, 97, 70);
+    background-color: rgb(3, 1, 0);
     text-decoration-color: white;
     color: white;
     
+}
+header h1{
+    padding: 10px;
+    margin-top: 0px;
 }
 section {
     margin: 70px;
@@ -24,13 +32,11 @@ section {
     padding: 30px;
 }
  
-option {
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
+a {
+    padding: 5px;
     flex-flow: column;
     columns: 3;
-    row-gap: 1;
+    row-gap: 1;  
 }
 .bar {
     padding: 20px;
@@ -48,4 +54,10 @@ option {
     padding-left: 5px;
     padding-right: 5px;
   
+}
+dl {
+    background-color: white;
+    margin-left: 20em;
+    margin-right: 20em;
+    border: black dashed;
 }

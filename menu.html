@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="final.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>Menu</title>
 </head>
 <body>
-    <p>hello again</p>
+    <main id="main">
+        
+        <h1>Menu</h1>
+
+        <img src="/breakfast.jpg" alt="breakfast" height="500px"> 
+        <img src="/lunch.jpg" alt="lunch"  height="500px">
+        <img src="/dinner.jpg" alt="dinner"  height="500px">
+
+        <form>
+            <label>Enter suggestion for the special <br></label>
+            <textarea placeholder="prime rib" name="suggestions" id="suggestions" rows="6" cols="50"></textarea>
+            <input type="submit" id="submit">
+
+            <script>
+                $("#submit").click(write())
+                function write()
+                {
+                    var answer = $("#suggestions").value;
+                    var whereToPutIt = document.getElementById("firstSection");
+                    whereToPutIt.innerHTML = `<p>${answer}</p>`
+                }
+            </script>
+    
+        </form>
+
+        <section id="firstSection">
+           <h3>Prevoius suggestions</h3>
+        </section>
+
+        
+    </main>
 </body>
 </html>

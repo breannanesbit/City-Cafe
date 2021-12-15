@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="final.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+    <script src="final.js"></script>
     <title>City Cafe</title>
 </head>
 <body>
@@ -12,20 +16,56 @@
     <main>
         <header>
             <h1>The City Cafe</h1>
-            <form>
-                <optgroup class="row">
-                    <option class="column" value="History" href="history.html">History</option>
-                    <option class="column" value="Menu"><a href="menu.html">Menu</a></option>
-                    <option class="column" value="Hours"><a href="hours.html">Hours</a></option>
-        
-                </optgroup>
-            </form>
+                <a id="history" class="column" href="/history.html">History</a>
+                <a id="menu" class="column" href="/menu.html">Menu</a>
+                <a id="hours" class="column" href="hours.html">Hours</a>
             
         </header>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" style="margin-left: 15%; margin-right: 15%;">
+          
+              <div class="carousel-indicators">
+                <button type="buttom" class="active" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1"></li>
+                <button type="buttom"  data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></li>
+                <button type="buttom"  data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></li>
+                <button type="buttom"  data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></li>
+                <button type="buttom"  data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></li>
+                <button type="buttom"  data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></li>
+                </div>
+        
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/toast.jpeg" class="d-block w-100" width="400" height="500" alt="french toast">
+              </div>
+              <div class="carousel-item">
+                <img src="/cornbeef.jpg" class="d-block w-100" width="400" height="500" alt="corn beef and hash">
+              </div>
+              <div class="carousel-item">
+                <img src="/omlet.jpg" class="d-block w-100" width="400" height="500" alt="veggie omlet">
+              </div>
+              <div class="carousel-item">
+                <img src="/steakandswiss.jpg" class="d-block w-100" width="400" height="500" alt="steak and swiss sandwich">
+              </div>
+              <div class="carousel-item">
+                <img src="/steak.jpeg" class="d-block w-100" width="400" height="500" alt="steak">
+              </div>
+              <div class="carousel-item">
+                <img src="/biscuit.jpg" class="d-block w-100" width="400" height="500" alt="biscuits and gray">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         <section>
  
             <h2>Overview</h2>
-            <p>The City Cafe is a little dinner on main street of Ephraim Utah. They serve home cooked meals like their famous old fashion meatloaf and Chicken Fried Steak. If you are looking for a fun, good food, family restaurant during your travels The City cafe is a great spot to stop. Run by Owner Whitney Burgess</p>
+            <p>The City Cafe is a little diner on main street of Ephraim Utah. They serve home cooked meals like their famous old fashion meatloaf and Chicken Fried Steak. If you are looking for a fun, good food, family restaurant during your travels The City cafe is a great spot to stop. Run by Owner Whitney Burgess</p>
         </section>
         <footer>
             <small>350 N Main St, Ephraim UT 84627 <br><a href="tel-4352836364">call: (438) 283-6364</a></small>
